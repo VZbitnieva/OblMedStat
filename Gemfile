@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 ruby '3.2.2'
 
 gem 'devise'
+gem 'devise-i18n'
 gem 'importmap-rails'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'

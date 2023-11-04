@@ -1,0 +1,8 @@
+nav
+  ul
+    li = link_to "Головна", root_path
+    - if user_signed_in?
+      li = link_to "Особистий кабінет", edit_user_registration_path
+    - else
+      li = link_to "Увійти", new_user_session_path
+      li = link_to "Зареєструватися", new_user_registration_path
