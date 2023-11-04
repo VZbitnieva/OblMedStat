@@ -16,7 +16,11 @@ gem 'slim-rails'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
-gem 'sassc'
+gem 'sassc-rails'
+gem 'bootstrap'
+gem 'bootstrap_form'
+gem 'mini_racer'
+
 # gem "jbuilder"
 # gem "kredis"
 # gem "bcrypt", "~> 3.1.7"

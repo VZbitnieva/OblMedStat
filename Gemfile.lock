@@ -75,12 +75,20 @@ GEM
       mutex_m
       tzinfo (~> 2.0)
     ast (2.4.2)
+    autoprefixer-rails (10.4.15.0)
+      execjs (~> 2)
     base64 (0.1.1)
     bcrypt (3.1.19)
     bigdecimal (3.1.4)
     bindex (0.8.1)
     bootsnap (1.17.0)
       msgpack (~> 1.2)
+    bootstrap (5.3.2)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 2.11.8, < 3)
+    bootstrap_form (5.4.0)
+      actionpack (>= 6.1)
+      activemodel (>= 6.1)
     builder (3.2.4)
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
@@ -100,6 +108,7 @@ GEM
     drb (2.1.1)
       ruby2_keywords
     erubi (1.12.0)
+    execjs (2.9.1)
     faraday (2.7.11)
       base64
       faraday-net_http (>= 2.0, < 3.1)
@@ -122,6 +131,7 @@ GEM
     json (2.6.3)
     jwt (2.7.1)
     language_server-protocol (3.17.0.3)
+    libv8-node (18.16.0.0-x86_64-linux)
     loofah (2.21.4)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -132,11 +142,13 @@ GEM
       net-smtp
     marcel (1.0.2)
     mini_mime (1.1.5)
+    mini_racer (0.8.0)
+      libv8-node (~> 18.16.0.0)
     minitest (5.20.0)
     msgpack (1.7.2)
     multi_xml (0.6.0)
     mutex_m (0.1.2)
-    net-imap (0.4.3)
+    net-imap (0.4.4)
       date
       net-protocol
     net-pop (0.1.2)
@@ -173,11 +185,12 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.4)
+    popper_js (2.11.8)
     psych (5.1.1.1)
       stringio
     puma (6.4.0)
       nio4r (~> 2.0)
-    racc (1.7.1)
+    racc (1.7.3)
     rack (3.0.8)
     rack-protection (3.0.6)
       rack
@@ -260,6 +273,12 @@ GEM
     ruby2_keywords (0.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     slim (5.1.1)
       temple (~> 0.10.0)
       tilt (>= 2.1.0)
@@ -310,10 +329,13 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bootstrap
+  bootstrap_form
   debug
   devise
   devise-i18n
   importmap-rails
+  mini_racer
   omniauth
   omniauth-google-oauth2
   pg (~> 1.1)
@@ -323,7 +345,7 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rails
   rubocop-rspec
-  sassc
+  sassc-rails
   slim-rails
   sprockets-rails
   stimulus-rails
