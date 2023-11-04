@@ -10,7 +10,7 @@ gem "puma", ">= 5.0"
 gem "importmap-rails"
 gem "turbo-rails"
 gem "stimulus-rails"
-gem 'slim'
+gem 'slim-rails'
 # gem "jbuilder"
 # gem "kredis"
 # gem "bcrypt", "~> 3.1.7"
