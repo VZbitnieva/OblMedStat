@@ -16,6 +16,7 @@ gem 'slim-rails'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
+gem 'sassc'
 # gem "jbuilder"
 # gem "kredis"
 # gem "bcrypt", "~> 3.1.7"
