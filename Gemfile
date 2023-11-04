@@ -6,6 +6,8 @@ ruby '3.2.2'
 
 gem 'devise'
 gem 'importmap-rails'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
 gem 'pg', '~> 1.1'
 gem 'puma', '>= 5.0'
 gem 'rails', '~> 7.1.1'
@@ -13,7 +15,6 @@ gem 'slim-rails'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
-
 # gem "jbuilder"
 # gem "kredis"
 # gem "bcrypt", "~> 3.1.7"
