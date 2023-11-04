@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 ruby '3.2.2'
 
+gem 'devise'
 gem 'importmap-rails'
 gem 'pg', '~> 1.1'
 gem 'puma', '>= 5.0'
@@ -12,6 +13,7 @@ gem 'slim-rails'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
+
 # gem "jbuilder"
 # gem "kredis"
 # gem "bcrypt", "~> 3.1.7"
