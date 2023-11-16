@@ -29,6 +29,7 @@ gem 'turbo-rails'
 gem 'bootsnap', require: false
 
 group :development, :test do
+  gem 'annotate'
   gem 'debug', platforms: %i[mri windows]
 end
 
