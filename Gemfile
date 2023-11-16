@@ -4,22 +4,22 @@ source 'https://rubygems.org'
 
 ruby '3.2.2'
 
+gem 'bootstrap'
+gem 'bootstrap_form'
 gem 'devise'
 gem 'devise-i18n'
 gem 'importmap-rails'
+gem 'mini_racer'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'pg', '~> 1.1'
 gem 'puma', '>= 5.0'
-gem 'rails', '~> 7.1.1'
+gem 'rails', '~> 7.1.2'
+gem 'sassc-rails'
 gem 'slim-rails'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
-gem 'sassc-rails'
-gem 'bootstrap'
-gem 'bootstrap_form'
-gem 'mini_racer'
 
 # gem "jbuilder"
 # gem "kredis"
@@ -27,7 +27,6 @@ gem 'mini_racer'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'bootsnap', require: false
-gem 'tzinfo-data', platforms: %i[windows jruby]
 
 group :development, :test do
   gem 'debug', platforms: %i[mri windows]

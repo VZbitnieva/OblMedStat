@@ -1,8 +1,26 @@
-nav
-  ul
-    li = link_to "Головна", root_path
-    - if user_signed_in?
-      li = link_to "Особистий кабінет", edit_user_registration_path
-    - else
-      li = link_to "Увійти", new_user_session_path
-      li = link_to "Зареєструватися", new_user_registration_path
+/ -------------------------------------------------------------------------------------------------
+nav.navbar.navbar-expand-lg.navbar-light.bg-warning
+  .container-fluid
+    a.navbar-brand[href="#"]
+      | OblMedStat
+    button.navbar-toggler[type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"]
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item
+          = link_to "Головна", root_path, class: 'nav-link active', 'aria-current': 'page'
+        - if user_signed_in?
+          li.nav-item.dropdown
+            a#dropdownMenuLink.btn.btn-warning.dropdown-toggle[href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"]
+              | Особистий кабінет
+            ul.dropdown-menu[aria-labelledby="dropdownMenuLink"]
+              li
+                = link_to "Редагувати профіль", edit_user_registration_path, class: 'dropdown-item'
+              li
+                = link_to "Щось інше", '#', class: 'dropdown-item'
+              li.divider
+              li
+                = link_to "Вихід", destroy_user_session_path, method: :delete, class: 'dropdown-item'
+        - else
+          li = link_to "Увійти", new_user_session_path, class: 'nav-link'
+          li = link_to "Зареєструватися", new_user_registration_path, class: 'nav-link '
