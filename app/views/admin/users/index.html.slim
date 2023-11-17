@@ -1,0 +1,11 @@
+p style="color: green" = notice
+
+h1 Users
+
+#admin_users
+  - @admin_users.each do |admin_user|
+    == render admin_user
+    p
+      = link_to "Show this user", admin_user_path(admin_user)
+
+= link_to "New user", new_admin_user_path
