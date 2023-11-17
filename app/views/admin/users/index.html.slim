@@ -6,6 +6,6 @@ h1 Users
   - @admin_users.each do |admin_user|
     == render admin_user
     p
-      = link_to "Show this user", admin_user_path(admin_user)
+      = link_to admin_user.full_name, admin_user_path(admin_user)
 
-= link_to "New user", new_admin_user_path
+= link_to "New user", new_admin_user_path, class: 'btn btn-primary'
