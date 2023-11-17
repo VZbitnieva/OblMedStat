@@ -34,7 +34,7 @@ class User < ApplicationRecord
   belongs_to :role, optional: true
   before_create :set_default_role
 
-  validates :full_name, length: { minimum: 2, maximum: 50 }
+  # validates :full_name, length: { minimum: 2, maximum: 50 }
 
   private
 

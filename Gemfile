@@ -31,6 +31,7 @@ gem 'bootsnap', require: false
 group :development, :test do
   gem 'annotate'
   gem 'debug', platforms: %i[mri windows]
+  gem 'ffaker', '~> 2.20'
 end
 
 group :development do
